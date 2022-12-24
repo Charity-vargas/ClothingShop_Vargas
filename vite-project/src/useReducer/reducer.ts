@@ -15,6 +15,11 @@ export const shopReducer = (state: ShopState, action: ShopAction) => {
         products: action.payload,
       };
 
+      case ShopActionType.UPDATE_PRODUCT:
+        return {
+          ...state,
+          products: action.payload,
+      };
     case ShopActionType.UPDATE:
       return {
         ...state,
